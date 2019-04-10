@@ -1,0 +1,50 @@
+<div class="card">
+  <div class="card-body">
+    <p style="font-size: 22px;font-weight: 600;text-transform: capitalize;">Update Profile <span style="color:#065d06;">{{msg}}</span></p>
+    <form [formGroup]="angForm">
+      
+      <div class="form-group">
+        <label class="col-md-4">Name</label>
+        <input type="text" class="form-control" formControlName="name" #name [(ngModel)] = "user.name"/>
+      </div>
+      <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['name'].errors.required">
+          Name is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4">Username</label>
+        <input type="text" class="form-control" formControlName="username" #username [(ngModel)] = "user.username"/>
+      </div>
+      <div *ngIf="angForm.controls['username'].invalid && (angForm.controls['username'].dirty || angForm.controls['username'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['username'].errors.required">
+          username is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4">Password</label>
+        <input type="text" class="form-control" formControlName="password" #password [(ngModel)] = "user.password"/>
+      </div>
+      <div *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['password'].errors.required">
+          password is required.
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="col-md-2">Profile Image</label>
+        <input type='file' (change)="onFileChanged($event)">
+        <label class="col-md-4">
+           <img [src]="url" style="width: 65px;" *ngIf="img1" > 
+           <img src="{{userimg}}" style="width: 65px;" *ngIf="img2">
+        </label>
+      </div>
+
+      <div class="form-group">
+        <button (click)="updateuser(name.value, username.value, password.value)" class="btn btn-primary">Update</button>
+      </div>
+    </form>
+  </div>
+</div>

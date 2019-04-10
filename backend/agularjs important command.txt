@@ -1,0 +1,70 @@
+https://www.youtube.com/watch?v=JAb0vvr6foU
+
+1. node -v
+2. npm -v
+3. npm install -g @angular/cli
+4. ng -v
+5. c:
+6. e:
+7. md mywebsite
+8. cd mywebsite
+9. node -v
+10. ng new website
+	10.1. npm install bootstrap@4 –save
+11. ng serve --open 
+12. dir
+13. cd website
+14. ng serve
+15. ng g m my-module --routing
+16. ng g s employee/service
+17. ng g c employees/listEmployees --spec false --flat true (OR) ng g c components/create
+18. ng g c employees/createEmployee --spec false --flat true
+
+
+https://www.techiediaries.com/angular-tutorial/
+[ 
+  https://investmentnovel.com/angular-6-crud-example-tutorial-from-scratch/
+  https://investmentnovel.com/angular-6-http-get-example/ 
+]
+https://jinalshahblog.wordpress.com/2016/10/06/rest-api-using-node-js-and-mysql/
+https://www.techiediaries.com/angular-router/
+https://code4developers.com/angular-6-crud-part-1-project-setup-routing-service/
+https://www.cc28tech.com/angular-2-employee-tracker-typescript-part-2/  -  important
+
+Image Uploading
+[
+	https://stackblitz.com/edit/angular-file-upload-preview?file=app%2Fhello.component.ts 
+	https://appdividend.com/2018/05/25/angular-6-file-upload-tutorial/ 					
+]
+
+Login :-
+http://jasonwatmore.com/post/2018/05/23/angular-6-jwt-authentication-example-tutorial
+https://stackblitz.com/edit/angular-6-jwt-authentication-example?file=app%2Flogin%2Flogin.component.html
+
+Token set : http://jasonwatmore.com/post/2018/05/16/angular-6-user-registration-and-login-example-tutorial
+
+https://stackoverflow.com/questions/10899384/uploading-both-data-and-files-in-one-form-using-ajax
+https://scriptsnulledfree.blogspot.com/2018/06/active-matrimonial-cms-v120-scripts.html
+https://stackoverflow.com/questions/40214772/file-upload-in-angular
+
+All client side module with bar chart:
+https://www.primefaces.org/primeng/#/chart/bar
+https://www.primefaces.org/primeng/#/fileupload
+
+Important :-
+1. first			 => The first() operator takes an optional predicate function and emits an error notification when no value matched when the source completed.
+2. pipe  			 => takes an infinite amount of arguments and each argument is an operator you want to apply to the Observable
+3. subscribe or then => The API for receiving values is the same whether the values are delivered synchronously or asynchronously
+4. navigate
+5. 
+6. *ngFor
+7. *ngIf
+8. routerLink
+9. invalid
+10. errors
+11. dirty
+12. touched
+13. ngModel
+14. formControlName
+15. map 			 => Operators like map are now used differently.
+

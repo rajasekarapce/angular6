@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+</div>-->
+
+<div class="container">
+  <div style="margin:4px;">
+   <span *ngIf="userlogedout"><a [routerLink]="['/', 'create']" routerLink Active="active" class="btn btn-primary"> Add Games </a></span>
+   <span *ngIf="userlogedout"> | <a [routerLink]="['/', 'index']" routerLink Active="active" class="btn btn-primary"> Listing </a> </span>
+   <span *ngIf="userloged"> <a [routerLink]="['/', 'login']" routerLink Active="active" class="btn btn-primary"> Login</a></span>
+   <span *ngIf="userloged"> | <a [routerLink]="['/', 'signup']" routerLink Active="active" class="btn btn-primary"> Signup </a></span>
+   <span *ngIf="userlogedout"> | <a [routerLink]="['/', 'profile']" routerLink Active="active" class="btn btn-primary"> Profile </a></span>
+   <span *ngIf="userlogedout"> | <a [routerLink]="['/', 'logout']" routerLink Active="active" class="btn btn-primary"> Logout </a></span>
+  </div>
+  <p *ngIf="user_name">Welcome <span style="color: #F44336;font-size: 22px;font-weight: 600;text-transform: capitalize;">{{ userlist.name }}</span></p>
+  <router-outlet></router-outlet>
+</div>
